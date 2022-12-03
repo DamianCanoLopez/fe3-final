@@ -6,7 +6,7 @@ import { useContextGlobal } from './utils/global.context'
 
 const Navbar = () => {
 
-  const {toggleTheme} = useContextGlobal()
+  const {dispatch} = useContextGlobal()
 
   return (
     <nav>
@@ -15,7 +15,7 @@ const Navbar = () => {
       <Link to='/'>Home</Link>
       <Link to='/contact'>Contact</Link>
       <Link to='/favs'>Favs</Link>
-      <button className='btn-theme' onClick={toggleTheme}>Change theme</button>
+      <button className='btn-theme' onClick={() => dispatch({type: "theme"})}>Change theme</button>
     </nav>
   )
 }

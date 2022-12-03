@@ -12,7 +12,7 @@ import {useContextGlobal} from "./Components/utils/global.context"
 function App() {
   const {theme} = useContextGlobal()
   return (
-      <div className="App" id={theme}>
+      <div className="App" id={theme.theme}>
           <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>}/>
