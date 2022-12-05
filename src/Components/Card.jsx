@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState, createContext, useContext} from "react";
 import { useContextGlobal } from "./utils/global.context";
 
 
@@ -7,8 +8,8 @@ const Card = ({ data }) => {
   const {theme} = useContextGlobal();
 
   const addFav = ()=>{
-    // Aqui iria la logica para agregar la Card en el localStorage
-  }
+    localStorage.setItem("card", JSON.stringify(data));
+  };
 
   return (
     <div className="card">
