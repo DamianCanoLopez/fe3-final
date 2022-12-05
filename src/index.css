@@ -22,7 +22,7 @@ code {
 
 #dark .favButton {
   background-color: #3dbbc0e5;
-  color: #f1f1f1;
+  color: #030303;
 }
 
 #dark .favButton:hover {
@@ -116,7 +116,7 @@ form{
 }
 .container-form {
   width: 100%;
-  height: 70vh;
+  height: 74vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,8 +163,16 @@ form{
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(0, 0, 0);
+  margin: 15px;
   border-radius: 10px;
   box-shadow:0 1rem 2rem rgba(23, 20, 20, 0.2);
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover{
@@ -221,7 +229,11 @@ form{
 
 .container-favs {
   width: 100%;
-  height: 72vh;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 table {
@@ -231,6 +243,19 @@ table {
     display: table;
     border: 1px solid #ccc;
 
+}
+
+.fav-empty {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.active {
+  background-color: hsl(59, 100%, 50%);
+}
+
+#dark .active{
+  background-color: hsl(59, 100%, 50%);
 }
 
 td, th {
@@ -262,6 +287,6 @@ tr:nth-child(even) {
   color: white;
 }
 
-#dark .card{
+#dark .link-card{
   color: #ffffe9
 }
