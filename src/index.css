@@ -235,7 +235,8 @@ tr:nth-child(even) {
 }
 
 #dark{
-  background-color: #12121296;
+  background-color: #2d3848;
+  /*background-color: #12121296;*/
   color: white;
 }
 #dark .nav a {
