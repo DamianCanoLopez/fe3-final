@@ -2,7 +2,8 @@ import axios from "axios";
 import { useReducer } from "react";
 import { useEffect, useState, createContext, useContext } from "react";
 
-export const initialState = { theme: "light" }; //Esto se usa si lo hacemos con useReducer (creo jeje)
+
+export const initialState = { theme: "light" }; //Esto se usa si lo hacemos con useReducer
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -14,11 +15,14 @@ const reducer = (state, action) => {
   }
 };
 
+
+
 export const ContextGlobal = createContext();
 
 const ContextProvider = ({ children }) => {
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
 
+  
   const [theme, dispatch] = useReducer(reducer, initialState); //Esto lo agregue para hacer el theme con useState, VER!;
   const [dentist, setDentist] = useState([]);
   const [favs, setFavs] = useState([])
@@ -55,7 +59,7 @@ const ContextProvider = ({ children }) => {
         theme,
         dispatch,
         favs,
-        setFavs
+        setFavs,
       }}
     >
       {children}

@@ -33,7 +33,7 @@ const Card = ({ data }) => {
         addFav() 
         setActive(!active)}} 
         className={`favButton ${active ? "active" : ""}`} id={theme.theme}>
-        Add fav
+        ⭐Add fav⭐
       </button>
     </div>
   )

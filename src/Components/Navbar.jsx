@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link to='/contact'>Contact</Link>
         <Link to='/favs'>Favs</Link>
       </div>
-      <button className='btn-theme' onClick={() => dispatch({type: "theme"})}>Change theme</button>
+      <button className='btn-theme' onClick={() => dispatch({type: "theme"})}>🌞Change theme🌜</button>
     </nav>
   )
 }

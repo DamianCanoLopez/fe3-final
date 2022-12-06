@@ -255,7 +255,7 @@ table {
 }
 
 #dark .active{
-  background-color: hsl(59, 100%, 50%);
+  background-color: hsl(23, 100%, 53%);
 }
 
 td, th {
@@ -274,6 +274,11 @@ tr:nth-child(even) {
 }
 #dark .nav a {
   color: white;
+}
+
+#dark .nav a:hover{
+  cursor: pointer;
+  box-shadow: 3px 7px 10px -2px rgba(40, 220, 214, 0.785);
 }
 
 #dark .footer {
