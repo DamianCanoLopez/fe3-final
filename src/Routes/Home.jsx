@@ -12,7 +12,7 @@ const Home = () => {
   console.log(dentist);
 
   return (
-    <main className="" >
+    <main className="mainHome" >
       <h1>Home</h1>
       <div className='card-grid'>
       {dentist.map(dentist => (<Card key={dentist.id} data={dentist} />))}

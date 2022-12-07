@@ -65,7 +65,7 @@ const Form = () => {
   }
 
   return (
-    <div className="container-form">
+    <div className="container-formComponent">
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input type="text" name="name" className="input-form" onChange={handleChange} />
@@ -73,7 +73,9 @@ const Form = () => {
         <input type="text" name="email" className="input-form" onChange={handleChange} />
         <button type="submit" className="btn-form">SUBMIT</button>
       </form>
+      <div className="container-h3">
       {validation ? <h3 className="h3">Gracias por comunicarse con nosotros {values.name}, un asistente se contactará lo antes posible!</h3> : ""}
+      </div>
     </div>
   );
 };
