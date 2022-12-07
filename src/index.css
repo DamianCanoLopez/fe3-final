@@ -286,7 +286,7 @@ form{
 }
 
 .container-card-detail {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -294,10 +294,11 @@ form{
 }
 
 .card-detail {
-  width: 50%;
+  width: 35%;
   padding: 20px;
   text-align: center;
   border: 2px solid black;
+  border-radius: 5%;
 }
 
 .img-doc-detail {
@@ -320,8 +321,8 @@ form{
 }
 
 .container-favs {
-  width: 100%;
-  height: fit-content;
+  width: auto;
+  height:max-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
