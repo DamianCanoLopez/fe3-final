@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useContextGlobal } from './utils/global.context'
 
+
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Navbar = () => {
@@ -17,7 +18,10 @@ const Navbar = () => {
         <Link to='/contact'>Contact</Link>
         <Link to='/favs'>Favs</Link>
       </div>
-      <button className='btn-theme' onClick={() => dispatch({type: "theme"})}>🌞Change theme🌜</button>
+      <input id="dark-mode" class="toggle" type="checkbox" name="Dark mode" role="switch" value="on" onClick={() => dispatch({type: "theme"})}/>
+      
+      <label for="dark-mode" class="sr">
+      </label>
     </nav>
   )
 }
