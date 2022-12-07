@@ -184,7 +184,7 @@ form{
   flex-direction: column;
   align-items: center;
   width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 0.5rem 0.8rem 0.5rem;
   border: 0.5px solid rgb(0, 0, 0);
   margin: 15px;
   border-radius: 10px;
